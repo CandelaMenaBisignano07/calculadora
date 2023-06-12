@@ -33,7 +33,7 @@ body {
         padding-bottom: 50px; }
         body .calculadoraContainer .calculadora .input .valor {
           height: 60px;
-          width: 500px;
+          width: fit-content;
           font-size: 50px;
           cursor: pointer;
           border: transparent;
@@ -288,3 +288,392 @@ footer .copyright {
   footer .copyright.dark {
     color: white;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+
+@media (max-width: 600px) {
+  header {
+    padding-right: 50px;
+    padding-left: 50px; }
+    header .logos .logo {
+      height: 30px; }
+      header .logos .logo:hover {
+        transform: scale(1.2); }
+    header label {
+      width: 90px;
+      height: 35px; }
+      header label .sun {
+        width: 35px;
+        height: 35px; }
+      header label span.slider::before {
+        height: 35px;
+        width: 35px; }
+    header label.active {
+      width: 90px;
+      height: 35px; }
+      header label.active .moon {
+        width: 25px;
+        height: 20px; }
+      header label.active span.slider.active::before {
+        height: 35px;
+        width: 35px;
+        transform: translateX(55px); }
+  main .calculadoraContainer .calculadora {
+    width: 350px; }
+    main .calculadoraContainer .calculadora .input .valor {
+      font-size: 25px; }
+    main .calculadoraContainer .calculadora .buttons {
+      height: 320px; }
+      main .calculadoraContainer .calculadora .buttons .boton {
+        background-color: #fdda99;
+        padding: 0px;
+        font-size: 20px;
+        color: white;
+        border-radius: 5px;
+        border-color: transparent; }
+      main .calculadoraContainer .calculadora .buttons #division, main .calculadoraContainer .calculadora .buttons #resta, main .calculadoraContainer .calculadora .buttons #suma, main .calculadoraContainer .calculadora .buttons #x {
+        background-color: #72abff;
+        padding: 0px;
+        font-size: 20px;
+        color: white;
+        border-radius: 5px;
+        border-color: transparent; }
+      main .calculadoraContainer .calculadora .buttons #c {
+        background-color: #fff895;
+        padding: 0px;
+        font-size: 25px;
+        color: white;
+        border-radius: 5px;
+        border-color: transparent; }
+      main .calculadoraContainer .calculadora .buttons #cero {
+        background-color: #daa3ff;
+        padding: 0px;
+        font-size: 20px;
+        color: white;
+        border-radius: 5px;
+        border-color: transparent; }
+      main .calculadoraContainer .calculadora .buttons #punto {
+        background-color: #72ffd0;
+        padding: 0px;
+        font-size: 25px;
+        color: white;
+        border-radius: 5px;
+        border-color: transparent; }
+      main .calculadoraContainer .calculadora .buttons #igual {
+        background-color: #fa8787;
+        padding: 0px;
+        font-size: 25px;
+        color: white;
+        border-radius: 5px;
+        border-color: transparent; }
+  main .calculadoraContainer .calculadora.dark {
+    width: 350px; }
+    main .calculadoraContainer .calculadora.dark .buttons .boton.dark {
+      background-color: #ffad31;
+      padding: 0px;
+      font-size: 20px;
+      color: white;
+      border-radius: 5px;
+      border-color: transparent; }
+    main .calculadoraContainer .calculadora.dark .buttons #c.boton.dark {
+      background-color: #fff347;
+      padding: 0px;
+      font-size: 25px;
+      color: white;
+      border-radius: 5px;
+      border-color: transparent; }
+    main .calculadoraContainer .calculadora.dark .buttons #igual.boton.dark {
+      background-color: #fc1414;
+      padding: 0px;
+      font-size: 25px;
+      color: white;
+      border-radius: 5px;
+      border-color: transparent; }
+    main .calculadoraContainer .calculadora.dark .buttons #punto.boton.dark {
+      background-color: #25f5b0;
+      padding: 0px;
+      font-size: 25px;
+      color: white;
+      border-radius: 5px;
+      border-color: transparent; }
+    main .calculadoraContainer .calculadora.dark .buttons #cero.boton.dark {
+      background-color: #bd59ff;
+      padding: 0px;
+      font-size: 20px;
+      color: white;
+      border-radius: 5px;
+      border-color: transparent;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    main .calculadoraContainer .calculadora.dark .buttons #x.boton.dark, main .calculadoraContainer .calculadora.dark .buttons #division.boton.dark, main .calculadoraContainer .calculadora.dark .buttons #suma.boton.dark, main .calculadoraContainer .calculadora.dark .buttons #resta.boton.dark {
+      background-color: #468efa;
+      padding: 0px;
+      font-size: 20px;
+      color: white;
+      border-radius: 5px;
+      border-color: transparent; }
+  footer .copyright p {
+    font-size: 13px; }
+  footer .copyright.dark p {
+    font-size: 13px; } }
+
+@media (max-width: 375px) {
+  header {
+    padding-right: 30px;
+    padding-left: 30px; }
+    header .logos {
+      gap: 15px; }
+      header .logos .logo {
+        height: 25px; }
+        header .logos .logo:hover {
+          transform: scale(1.2); }
+    header label {
+      width: 60px;
+      height: 26px; }
+      header label .sun {
+        width: 25px;
+        height: 25px; }
+      header label span.slider::before {
+        height: 25px;
+        width: 25px; }
+    header label.active {
+      width: 60px;
+      height: 26px; }
+      header label.active .moon {
+        width: 18px;
+        height: 25px; }
+      header label.active span.slider.active::before {
+        height: 25px;
+        width: 25px;
+        transform: translateX(35px); }
+  main .calculadoraContainer .calculadora {
+    width: 230px; }
+    main .calculadoraContainer .calculadora .input {
+      height: 100px; }
+      main .calculadoraContainer .calculadora .input .valor {
+        font-size: 20px; }
+    main .calculadoraContainer .calculadora .buttons {
+      height: 210px; }
+      main .calculadoraContainer .calculadora .buttons .boton {
+        background-color: #fdda99;
+        padding: 0px;
+        font-size: 15px;
+        color: white;
+        border-radius: 5px;
+        border-color: transparent; }
+      main .calculadoraContainer .calculadora .buttons #division, main .calculadoraContainer .calculadora .buttons #resta, main .calculadoraContainer .calculadora .buttons #suma, main .calculadoraContainer .calculadora .buttons #x {
+        background-color: #72abff;
+        padding: 0px;
+        font-size: 17px;
+        color: white;
+        border-radius: 5px;
+        border-color: transparent; }
+      main .calculadoraContainer .calculadora .buttons #c {
+        background-color: #fff895;
+        padding: 0px;
+        font-size: 20px;
+        color: white;
+        border-radius: 5px;
+        border-color: transparent; }
+      main .calculadoraContainer .calculadora .buttons #cero {
+        background-color: #daa3ff;
+        padding: 0px;
+        font-size: 17px;
+        color: white;
+        border-radius: 5px;
+        border-color: transparent; }
+      main .calculadoraContainer .calculadora .buttons #punto {
+        background-color: #72ffd0;
+        padding: 0px;
+        font-size: 20px;
+        color: white;
+        border-radius: 5px;
+        border-color: transparent; }
+      main .calculadoraContainer .calculadora .buttons #igual {
+        background-color: #fa8787;
+        padding: 0px;
+        font-size: 20px;
+        color: white;
+        border-radius: 5px;
+        border-color: transparent; }
+  main .calculadoraContainer .calculadora.dark {
+    width: 230px; }
+    main .calculadoraContainer .calculadora.dark .buttons {
+      height: 210px; }
+      main .calculadoraContainer .calculadora.dark .buttons .boton.dark {
+        background-color: #ffad31;
+        padding: 0px;
+        font-size: 15px;
+        color: white;
+        border-radius: 5px;
+        border-color: transparent; }
+      main .calculadoraContainer .calculadora.dark .buttons #c.boton.dark {
+        background-color: #fff347;
+        padding: 0px;
+        font-size: 20px;
+        color: white;
+        border-radius: 5px;
+        border-color: transparent; }
+      main .calculadoraContainer .calculadora.dark .buttons #igual.boton.dark {
+        background-color: #fc1414;
+        padding: 0px;
+        font-size: 20px;
+        color: white;
+        border-radius: 5px;
+        border-color: transparent; }
+      main .calculadoraContainer .calculadora.dark .buttons #punto.boton.dark {
+        background-color: #25f5b0;
+        padding: 0px;
+        font-size: 20px;
+        color: white;
+        border-radius: 5px;
+        border-color: transparent; }
+      main .calculadoraContainer .calculadora.dark .buttons #cero.boton.dark {
+        background-color: #bd59ff;
+        padding: 0px;
+        font-size: 17px;
+        color: white;
+        border-radius: 5px;
+        border-color: transparent;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+      main .calculadoraContainer .calculadora.dark .buttons #x.boton.dark, main .calculadoraContainer .calculadora.dark .buttons #division.boton.dark, main .calculadoraContainer .calculadora.dark .buttons #suma.boton.dark, main .calculadoraContainer .calculadora.dark .buttons #resta.boton.dark {
+        background-color: #468efa;
+        padding: 0px;
+        font-size: 17px;
+        color: white;
+        border-radius: 5px;
+        border-color: transparent; }
+  footer .copyright p {
+    font-size: 10px; }
+  footer .copyright.dark p {
+    font-size: 10px; } }
+
+@media (max-width: 250px) {
+  header {
+    padding-right: 20px;
+    padding-left: 20px; }
+    header .logos {
+      gap: 10px; }
+      header .logos .logo {
+        height: 20px; }
+        header .logos .logo:hover {
+          transform: scale(1.2); }
+    header label {
+      width: 50px;
+      height: 20px; }
+      header label .sun {
+        width: 19px;
+        height: 20px; }
+      header label span.slider::before {
+        height: 20px;
+        width: 20px; }
+    header label.active {
+      width: 50px;
+      height: 20px; }
+      header label.active .moon {
+        width: 14px;
+        height: 20px; }
+      header label.active span.slider.active::before {
+        height: 20px;
+        width: 20px;
+        transform: translateX(30px); }
+  main .calculadoraContainer .calculadora {
+    width: 180px; }
+    main .calculadoraContainer .calculadora .input {
+      height: 30px; }
+      main .calculadoraContainer .calculadora .input .valor {
+        font-size: 15px; }
+    main .calculadoraContainer .calculadora .buttons {
+      height: 180px; }
+      main .calculadoraContainer .calculadora .buttons .boton {
+        background-color: #fdda99;
+        padding: 0px;
+        font-size: 10px;
+        color: white;
+        border-radius: 5px;
+        border-color: transparent; }
+      main .calculadoraContainer .calculadora .buttons #division, main .calculadoraContainer .calculadora .buttons #resta, main .calculadoraContainer .calculadora .buttons #suma, main .calculadoraContainer .calculadora .buttons #x {
+        background-color: #72abff;
+        padding: 0px;
+        font-size: 14px;
+        color: white;
+        border-radius: 5px;
+        border-color: transparent; }
+      main .calculadoraContainer .calculadora .buttons #c {
+        background-color: #fff895;
+        padding: 0px;
+        font-size: 17px;
+        color: white;
+        border-radius: 5px;
+        border-color: transparent; }
+      main .calculadoraContainer .calculadora .buttons #cero {
+        background-color: #daa3ff;
+        padding: 0px;
+        font-size: 14px;
+        color: white;
+        border-radius: 5px;
+        border-color: transparent; }
+      main .calculadoraContainer .calculadora .buttons #punto {
+        background-color: #72ffd0;
+        padding: 0px;
+        font-size: 17px;
+        color: white;
+        border-radius: 5px;
+        border-color: transparent; }
+      main .calculadoraContainer .calculadora .buttons #igual {
+        background-color: #fa8787;
+        padding: 0px;
+        font-size: 17px;
+        color: white;
+        border-radius: 5px;
+        border-color: transparent; }
+  main .calculadoraContainer .calculadora.dark {
+    width: 180px; }
+    main .calculadoraContainer .calculadora.dark .buttons {
+      height: 180px; }
+      main .calculadoraContainer .calculadora.dark .buttons .boton.dark {
+        background-color: #ffad31;
+        padding: 0px;
+        font-size: 10px;
+        color: white;
+        border-radius: 5px;
+        border-color: transparent; }
+      main .calculadoraContainer .calculadora.dark .buttons #c.boton.dark {
+        background-color: #fff347;
+        padding: 0px;
+        font-size: 17px;
+        color: white;
+        border-radius: 5px;
+        border-color: transparent; }
+      main .calculadoraContainer .calculadora.dark .buttons #igual.boton.dark {
+        background-color: #fc1414;
+        padding: 0px;
+        font-size: 17px;
+        color: white;
+        border-radius: 5px;
+        border-color: transparent; }
+      main .calculadoraContainer .calculadora.dark .buttons #punto.boton.dark {
+        background-color: #25f5b0;
+        padding: 0px;
+        font-size: 17px;
+        color: white;
+        border-radius: 5px;
+        border-color: transparent; }
+      main .calculadoraContainer .calculadora.dark .buttons #cero.boton.dark {
+        background-color: #bd59ff;
+        padding: 0px;
+        font-size: 14px;
+        color: white;
+        border-radius: 5px;
+        border-color: transparent;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+      main .calculadoraContainer .calculadora.dark .buttons #x.boton.dark, main .calculadoraContainer .calculadora.dark .buttons #division.boton.dark, main .calculadoraContainer .calculadora.dark .buttons #suma.boton.dark, main .calculadoraContainer .calculadora.dark .buttons #resta.boton.dark {
+        background-color: #468efa;
+        padding: 0px;
+        font-size: 14px;
+        color: white;
+        border-radius: 5px;
+        border-color: transparent; }
+  footer .copyright p {
+    font-size: 8.5px;
+    text-align: center; }
+  footer .copyright.dark p {
+    font-size: 8.5px;
+    text-align: center; } }
