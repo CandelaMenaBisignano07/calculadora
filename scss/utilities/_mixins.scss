@@ -1,0 +1,8 @@
+@mixin boton($fondo-color, $padding,$font-size,$color-font,$border-radius, $border-color){
+    background-color: $fondo-color;
+    padding: $padding;
+    font-size: $font-size;
+    color: $color-font;
+    border-radius: $border-radius;
+    border-color: $border-color;
+}

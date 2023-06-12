@@ -1,0 +1,100 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-right: 70px;
+    padding-left: 70px;
+    align-items: center;
+    .logos{
+        display: flex;
+        justify-content: flex-start;
+        gap: 30px;
+        .logo{
+        height: 35px;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        filter: drop-shadow(0 0 10px white);
+        &:hover{
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transform: scale(1.3);
+            cursor: pointer;
+        } 
+        }
+    }
+}
+    label{
+        font-size: 17px;
+        position: relative;
+        display: inline-block;
+        width: 100px;
+        height: 40px;
+        .sun{
+            position: absolute;
+            right: 0;
+            width: 40px;
+            height: 40px;
+            z-index: 2;
+            transition: all 0.5s ease-in-out;
+        }
+        .moon{
+            display: none;
+        }
+        span.slider{
+            position: absolute;
+            cursor: pointer;
+            inset: 0;
+            background: #9fccfa;
+            border-radius: 50px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            align-items: center;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 1px solid white;
+            &::before{
+                z-index: 2;
+                position: absolute;
+                content: "";
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 40px;
+                width: 40px;
+                inset: 0;
+                background-color: white;
+                border-radius: 50%;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+                transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            }
+        }
+    }
+    label.active{
+        font-size: 17px;
+        position: relative;
+        display: inline-block;
+        width: 100px;
+        height: 40px;
+        .sun{
+            display: none;
+            transition: all 0.5s ease-in-out;
+        }
+        .moon{
+            display:block;
+            opacity: 1;
+            position: absolute;
+            left: 5px;
+            width: 30px;
+            height: 25px;
+            z-index: 2;
+            transition: all 0.5s ease-in-out;
+            svg{
+                fill: yellow;
+            }
+        }
+        span.slider.active{
+            background: #013570;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0px 0px 24px 8px rgba(255, 255, 255, 0.84);
+            &::before{
+                transform: translateX(60px);
+                box-shadow: 0 10px 20px rgba(255, 255, 255, 0.4);
+            }
+        }
+}

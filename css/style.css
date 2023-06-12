@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'DM Sans', sans-serif; }
+
+body {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+  body .calculadoraContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+    body .calculadoraContainer .calculadora {
+      width: 500px;
+      height: fit-content;
+      border: 1px solid #e6e6e6;
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 5px;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+      body .calculadoraContainer .calculadora .input {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 50px; }
+        body .calculadoraContainer .calculadora .input .valor {
+          height: 60px;
+          width: 500px;
+          font-size: 50px;
+          cursor: pointer;
+          border: transparent;
+          align-items: center;
+          display: flex;
+          justify-content: flex-end; }
+      body .calculadoraContainer .calculadora .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-row-gap: 5px;
+        grid-column-gap: 5px;
+        grid-template-areas: "c c division x" "siete ocho nueve resta" "cuatro cinco seis suma" "uno dos tres igual" "cero cero punto igual";
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        body .calculadoraContainer .calculadora .buttons .boton {
+          background-color: #fdda99;
+          padding: 15px;
+          font-size: 20px;
+          color: white;
+          border-radius: 5px;
+          border-color: transparent;
+          cursor: pointer;
+          transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        body .calculadoraContainer .calculadora .buttons #division, body .calculadoraContainer .calculadora .buttons #resta, body .calculadoraContainer .calculadora .buttons #suma, body .calculadoraContainer .calculadora .buttons #x {
+          background-color: #72abff;
+          padding: 15px;
+          font-size: 25px;
+          color: white;
+          border-radius: 5px;
+          border-color: transparent;
+          cursor: pointer;
+          transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        body .calculadoraContainer .calculadora .buttons #c {
+          grid-area: c;
+          background-color: #fff895;
+          padding: 15px;
+          font-size: 35px;
+          color: white;
+          border-radius: 5px;
+          border-color: transparent;
+          cursor: pointer;
+          transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        body .calculadoraContainer .calculadora .buttons #division {
+          grid-area: division; }
+        body .calculadoraContainer .calculadora .buttons #x {
+          grid-area: x; }
+        body .calculadoraContainer .calculadora .buttons #siete {
+          grid-area: siete; }
+        body .calculadoraContainer .calculadora .buttons #ocho {
+          grid-area: ocho; }
+        body .calculadoraContainer .calculadora .buttons #nueve {
+          grid-area: nueve; }
+        body .calculadoraContainer .calculadora .buttons #resta {
+          grid-area: resta; }
+        body .calculadoraContainer .calculadora .buttons #cuatro {
+          grid-area: cuatro; }
+        body .calculadoraContainer .calculadora .buttons #cinco {
+          grid-area: cinco; }
+        body .calculadoraContainer .calculadora .buttons #seis {
+          grid-area: seis; }
+        body .calculadoraContainer .calculadora .buttons #suma {
+          grid-area: suma; }
+        body .calculadoraContainer .calculadora .buttons #uno {
+          grid-area: uno; }
+        body .calculadoraContainer .calculadora .buttons #dos {
+          grid-area: dos; }
+        body .calculadoraContainer .calculadora .buttons #tres {
+          grid-area: tres; }
+        body .calculadoraContainer .calculadora .buttons #cero {
+          grid-area: cero;
+          background-color: #daa3ff;
+          padding: 15px;
+          font-size: 25px;
+          color: white;
+          border-radius: 5px;
+          border-color: transparent;
+          cursor: pointer;
+          transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        body .calculadoraContainer .calculadora .buttons #punto {
+          grid-area: punto;
+          background-color: #72ffd0;
+          padding: 15px;
+          font-size: 40px;
+          color: white;
+          border-radius: 5px;
+          border-color: transparent;
+          cursor: pointer;
+          transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        body .calculadoraContainer .calculadora .buttons #igual {
+          grid-area: igual;
+          background-color: #fa8787;
+          padding: 15px;
+          font-size: 30px;
+          color: white;
+          border-radius: 5px;
+          border-color: transparent;
+          cursor: pointer;
+          transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+
+body.dark {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: black; }
+  body.dark .calculadora.dark {
+    border: 1px solid rgba(255, 255, 255, 0.973);
+    background-color: black;
+    box-shadow: 0px 0px 24px 8px rgba(158, 158, 158, 0.84);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    body.dark .calculadora.dark .input .valor {
+      color: white; }
+    body.dark .calculadora.dark .boton.dark {
+      background-color: #ffad31;
+      padding: 15px;
+      font-size: 20px;
+      color: white;
+      border-radius: 5px;
+      border-color: transparent;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    body.dark .calculadora.dark #c.boton.dark {
+      background-color: #fff347;
+      padding: 15px;
+      font-size: 35px;
+      color: white;
+      border-radius: 5px;
+      border-color: transparent;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    body.dark .calculadora.dark #igual.boton.dark {
+      background-color: #fc1414;
+      padding: 15px;
+      font-size: 30px;
+      color: white;
+      border-radius: 5px;
+      border-color: transparent;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    body.dark .calculadora.dark #punto.boton.dark {
+      background-color: #25f5b0;
+      padding: 15px;
+      font-size: 40px;
+      color: white;
+      border-radius: 5px;
+      border-color: transparent;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    body.dark .calculadora.dark #cero.boton.dark {
+      background-color: #bd59ff;
+      padding: 15px;
+      font-size: 25px;
+      color: white;
+      border-radius: 5px;
+      border-color: transparent;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    body.dark .calculadora.dark #x.boton.dark, body.dark .calculadora.dark #division.boton.dark, body.dark .calculadora.dark #suma.boton.dark, body.dark .calculadora.dark #resta.boton.dark {
+      background-color: #468efa;
+      padding: 15px;
+      font-size: 25px;
+      color: white;
+      border-radius: 5px;
+      border-color: transparent;
+      cursor: pointer;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-right: 70px;
+  padding-left: 70px;
+  align-items: center; }
+  header .logos {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px; }
+    header .logos .logo {
+      height: 35px;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      filter: drop-shadow(0 0 10px white); }
+      header .logos .logo:hover {
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transform: scale(1.3);
+        cursor: pointer; }
+
+label {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 40px; }
+  label .sun {
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+    transition: all 0.5s ease-in-out; }
+  label .moon {
+    display: none; }
+  label span.slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background: #9fccfa;
+    border-radius: 50px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    align-items: center;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid white; }
+    label span.slider::before {
+      z-index: 2;
+      position: absolute;
+      content: "";
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      width: 40px;
+      inset: 0;
+      background-color: white;
+      border-radius: 50%;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+
+label.active {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 40px; }
+  label.active .sun {
+    display: none;
+    transition: all 0.5s ease-in-out; }
+  label.active .moon {
+    display: block;
+    opacity: 1;
+    position: absolute;
+    left: 5px;
+    width: 30px;
+    height: 25px;
+    z-index: 2;
+    transition: all 0.5s ease-in-out; }
+    label.active .moon svg {
+      fill: yellow; }
+  label.active span.slider.active {
+    background: #013570;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0px 0px 24px 8px rgba(255, 255, 255, 0.84); }
+    label.active span.slider.active::before {
+      transform: translateX(60px);
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.4); }
+
+footer .copyright {
+  display: flex;
+  justify-content: center;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+  footer .copyright.dark {
+    color: white;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
